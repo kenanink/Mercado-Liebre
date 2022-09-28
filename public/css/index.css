@@ -84,6 +84,15 @@ a{
     padding: 0 0 0 100px;
     display: flex;
 }
+.toggle{
+    height: 30px;
+    width: 30px;
+}
+.bot-tog{
+    border: none;
+    background: none;
+    display: none;
+}
 .cont-menu{
     width: 100%;
     display: flex;
@@ -129,9 +138,9 @@ a{
     padding-top: 25px;
 }
 .container{
-padding: 10px;
-background-color: white;
-position: relative;
+    padding: 10px;
+    background-color: white;
+    position: relative;
 }
 .car-obj{
     position: absolute;
@@ -163,8 +172,10 @@ position: relative;
 .off{
     color: rgb(149, 221, 41);
 }
+
 .container-footers{
     background-color: white;
+    max-width: 1440px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -195,4 +206,61 @@ footer p{
     font-weight: 300;
     margin: 10px;
     text-align: center;
+}
+@media all and (max-width:769px ){
+    
+    .desp-menu{
+        min-width: 480px;
+        position: relative;
+    }
+    .cont-menu{
+        flex-direction: column;
+        min-width: 480px;
+    }
+    .nav-header{
+        width: 100%;
+        margin: 0;
+        min-width: 480px;
+    }
+    .cont-sup{
+        margin-left: 20px;
+        padding-left: 0;
+        min-width: 480px;
+    }
+    .cont-inf{
+        min-width: 480px;
+        margin: 5px;
+        padding: 0;
+    }
+    .cont-src{
+        width: 100%;
+        margin-right: 20px;
+        min-width: 480px;
+    }
+    .search{
+        width: 100%;
+        min-width: 480px;
+    }
+    .frase{
+        display: none;
+    }
+    .contain-objects{
+        flex-wrap: wrap;
+    }
+    .container{
+        margin: 10px;
+    }
+    .object img{
+        height: 40vw;
+        width: 40vw;
+        max-height: none;
+        max-width: none;
+    }
+    .container-footers{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 480px;
+    }
 }
