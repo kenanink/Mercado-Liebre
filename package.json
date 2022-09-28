@@ -16,5 +16,8 @@
     "url": "https://github.com/kenanink/Mercado-Liebre/issues"
   },
   "homepage": "https://github.com/kenanink/Mercado-Liebre#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
