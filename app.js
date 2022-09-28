@@ -19,34 +19,30 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, './views/index.html'));
 });
 
-app.get('/cursos', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/cursos.html'));
+app.get('/creatucuenta', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/creatucuenta.html'));
 });
 
-app.get('/descargables', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/descargables.html'));
+app.get('/ingresar', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/ingresar.html'));
 });
 
-app.get('/traductor', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/traductor.html'));
+app.get('/ayuda', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/ayuda.html'));
 });
 
-app.get('/suscripciones', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/suscripciones.html'));
+app.get('/ofertas', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/ofertas.html'));
 });
 
-app.get('/contacto', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/contacto.html'));
+app.get('/tiendasoficiales', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/tiendasoficiales.html'));
 });
 
-app.get('/registro', (req, res)=>{
-  res.sendFile(path.resolve(__dirname, './views/registro.html'));
+app.get('/todoslosproductos', (req, res)=>{
+  res.sendFile(path.resolve(__dirname, './views/todoslosproductos.html'));
 });
 
-app.get('/login', (req, res)=>{
-  res.sendFile(path.resolve(__dirname, './views/login.html'));
-});
-
-app.get('/carrito-compras', (req, res)=>{
-  res.sendFile(path.resolve(__dirname, './views/carrito-compras.html'));
+app.get('/vender', (req, res)=>{
+  res.sendFile(path.resolve(__dirname, './views/vender.html'));
 });
